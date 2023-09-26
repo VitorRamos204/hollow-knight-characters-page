@@ -67,6 +67,12 @@ header h1 {
     height: 41.6rem;
     object-fit: cover;
     border-radius: 6rem;
+    transition: all 700ms;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
 }
 
 .card h2 {
