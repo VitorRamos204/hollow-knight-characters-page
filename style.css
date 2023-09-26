@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ff: 'Epilogue', sans-serif;
+    --bg-primary: #242649;
+    --fc-primary: white;
+    --fc-secondary: hsl(50, 86%, 89%);
+    --fs-body: 1.6rem;
+    --fs-header: 4rem;
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--ff);
+    background: var(--bg-primary);
+    color: var(--fc-primary);
+    font-size: var(--fs-body);
+}
+
+.page {
+    max-width: 33rem;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    gap: 2.6rem
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    margin: 10rem 0 8rem;
+    font-family: var(--ff);
+    text-align: center;
+}
+
+header p {
+    color: var(--fc-secondary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+
+    margin-bottom: 1.7rem;
+    line-height: 3.2rem;
+}
+
+header h1 {
+    font-weight: 800;
+    line-height: 4.8rem;
+    font-size: var(--fs-header);
+}
+
+.card {
+    position: relative;
+    font-family: var(--ff);
+}
+
+.card img {
+    height: 41.6rem;
+    object-fit: cover;
+    border-radius: 6rem;
+}
+
+.card h2 {
+    position: absolute;
+    bottom: 5.2rem;
+    left: 2.8rem;
+    font-size: var(--fs-header);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem; 
+}
+
+.card h2 span {
+    font-weight: 400;
+    font-size: var(--fs-body);
+    border-radius: 2rem;
+    background: var(--fc-primary);
+    color: var(--bg-primary);
+    padding: 0 1.6rem;
+    height: 3.8rem;
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+}
