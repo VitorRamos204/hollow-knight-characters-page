@@ -27,9 +27,26 @@ body {
     margin: 0 auto;
 }
 
+@media (min-width: 930px) {
+    :root {
+        --fs-heading: 5.6rem;
+    }
+    .page {
+        max-width: 117rem;
+        padding: 0 5rem;
+    }
+
+    main {
+        grid-template-areas: "A B"
+        "C D";
+    }
+
+}
+
 main {
     display: grid;
-    gap: 2.6rem
+    gap: 2.6rem;
+    animation: downtop 1s reverse backwards;
 }
 
 img {
@@ -40,6 +57,7 @@ header {
     margin: 10rem 0 8rem;
     font-family: var(--ff);
     text-align: center;
+    animation: topdown 1s;
 }
 
 header p {
@@ -73,13 +91,14 @@ header h1 {
 .card img:hover {
     transform: scale(1.1);
     opacity: 0.5;
+    filter: blur(5px);
 }
 
 .card h2 {
     position: absolute;
     bottom: 5.2rem;
     left: 2.8rem;
-    font-size: var(--fs-header);
+    font-size: 4rem;
     font-weight: 800;
     display: flex;
     flex-direction: column;
@@ -99,10 +118,6 @@ header h1 {
     align-items: center;
 }
 
-header {
-    animation: topdown 1s;
-}
-
 
 @keyframes topdown {
     0% {
@@ -116,9 +131,6 @@ header {
     }
 }
 
-main {
-    animation: downtop 1s reverse;
-}
 
 @keyframes downtop {
     
